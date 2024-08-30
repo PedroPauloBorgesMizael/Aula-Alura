@@ -1,0 +1,53 @@
+.contato {
+    background: var(--cor-branca);
+    padding-top: 0.2em;
+}
+.contatos_true {
+    margin: 1em 1.5em 0 1.5em;
+}
+.contato_titulo {
+    color: var(--cor-azul);
+    font-size: 18px;
+}
+.contato_texto {
+    margin: 1em 0 1.5em 0;
+}
+.contato_email {
+    background-color: transparent;
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-azul);
+    width: 100%;
+    border-radius: 22px;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+.contato_email::placeholder {
+    text-align: center;
+    color: var(--cor-azul);
+    background: url(../imgs/Vector.svg) no-repeat;
+    background-position: 0.4em;
+}
+@media screen and (min-width:1024px) {
+    .contatos_true {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2em;
+    }
+    .contato_titulo {
+        font-size: 24px;
+        width: 60%;
+    }
+    .contato_texto {
+        width: 60%;
+    }
+    .contato_email {
+        width: 30%;
+    }
+}
+@media screen and (min-width:1728px) {
+    .contatos_true {
+        margin-top: 5em;
+        padding-bottom: 5em;
+    }
+}
